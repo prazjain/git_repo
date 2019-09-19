@@ -1,0 +1,18 @@
+{
+    "github" : {
+        "url" : "https://github.com/YOUR_USER_NAME",
+        "username" : "ENTER_YOUR_USER_NAME",
+        "password": "ENTER_YOUR_PASSWORD",
+        "local_base_dir" : "/local/data/github",
+        "ide_cmd" : "charm ."
+    },
+    "bitbucket" : {
+        "url" : "...",
+        "username" : "...",
+        "password": "...",
+        "local_base_dir" : "/local/data/bitbucket",
+        "ide_cmd" : "charm ."
+    },
+    "ide_cmd" : "code .",
+    "local_base_dir" : "/local/data/generic"
+}
