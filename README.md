@@ -11,30 +11,30 @@ Creating a new repo is actually a few steps, to be followed in a sequence. (You 
 
 How about if you can do this is seconds without having a crease on your brow?
 
-###Setup
+### Setup
 
-####Install latest python
+##### Install latest python
 
 [Python](https://www.python.org/downloads/)
 
-####Install Code editor
+##### Install Code editor
 
  * [PyCharm IDE](https://www.jetbrains.com/pycharm/download/#section=mac)
 
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
 
-####Install pip
+##### Install pip
 
 `sudo -H python -m ensurepip`
 
 `pip install --upgrade pip`
 
-####Install PyGithub
+##### Install PyGithub
 
 `pip install PyGithub`
 
-####Download the python scripts in this repo.
+##### Download the python scripts in this repo.
 
  * Make Python script executable
 
@@ -54,7 +54,7 @@ How about if you can do this is seconds without having a crease on your brow?
 
 	I will implement this soon.
 
-####Sample
+##### Sample
 
 I created this repo using this script itself.
 
