@@ -11,34 +11,14 @@ Creating a new repo is actually a few steps, to be followed in a sequence. (You 
 
 How about if you can do this is seconds without having a crease on your brow?
 
-### Setup
-
-##### Install latest python
-
-[Python](https://www.python.org/downloads/)
-
-##### Install Code editor
-
- * [PyCharm IDE](https://www.jetbrains.com/pycharm/download/#section=mac)
-
- * [Visual Studio Code](https://code.visualstudio.com/download)
-
-
-##### Install pip
-
-`sudo -H python -m ensurepip`
-
-`pip install --upgrade pip`
-
-##### Install PyGithub
-
-`pip install PyGithub`
-
 ##### Download the python scripts in this repo.
 
  * Make Python script executable
 
 	`chmod +x git_repo.py`
+
+
+### Usage
 
  * Create a repo
 
@@ -53,10 +33,14 @@ How about if you can do this is seconds without having a crease on your brow?
 	`./git_repo.py clone`
 
 	I will implement this soon.
+	
+ * More options coming...request them here
 
-##### Sample
 
-I created this repo using this script itself.
+#### Sample Output from script
+
+
+I created this repo using the script itself.
 
     (venv) Prashants-MacBook-Pro:hello Prashant$ ./git_repo.py create
     Creating repository...
@@ -80,4 +64,30 @@ I created this repo using this script itself.
     (venv) Prashants-MacBook-Pro:hello Prashant$ 
 
 Update the configuration.json file with url to your github repository and your username and password.
+
+	
+### Setup
+
+##### Install latest python
+
+[Python](https://www.python.org/downloads/)
+
+##### Install Code editor
+
+ * [PyCharm IDE](https://www.jetbrains.com/pycharm/download/#section=mac)
+
+ * [Visual Studio Code](https://code.visualstudio.com/download)
+
+
+##### Install pip
+
+`sudo -H python -m ensurepip`
+
+`pip install --upgrade pip`
+
+##### Install PyGithub
+
+`pip install PyGithub`
+
+
 
