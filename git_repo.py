@@ -12,8 +12,18 @@ def create():
     print("Created repository")
 
 
-def clone():
-    print("clone option is unimplemented")
+def test(url):
+    pass
+
+
+def clone(url):
+    repo = GithubRepo()
+    repo.clone(url)
+
+
+def fork(url):
+    repo = GithubRepo()
+    repo.fork(url)
 
 
 if __name__ == "__main__":
@@ -21,6 +31,10 @@ if __name__ == "__main__":
     if option == "create":
         create()
     elif option == "clone":
-        clone()
+        clone(sys.argv[2])
+    elif option == "fork":
+        fork(sys.argv[2])
+    elif option == "test":
+        test(sys.argv[2])
     else:
         print("unsupported operation :" + option)

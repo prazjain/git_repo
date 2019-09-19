@@ -9,7 +9,7 @@ Creating a new repo can be quite tricky, and who wants to spend time fumbling ar
 
 Creating a new repo is actually a few steps, to be followed in a sequence. (You need to create a remote repository (public/private?), then create a local repository, map local repository to remote repository etc)
 
-How about if you can do this is seconds without having a crease on your brow?
+How about if you can do this in seconds without having a crease on your brow?
 
 ##### Download the python scripts in this repo.
 
@@ -20,19 +20,37 @@ How about if you can do this is seconds without having a crease on your brow?
 
 ### Usage
 
- * Create a repo
+ * Create a repository
 
 	`./git_repo.py create`
 
-	In next steps, the script will ask you for repository name, and whether you want to create a private repo.
+	 * It will ask you for the new repository name.
+	 * It will ask if this is a private repository, ignore it for public repositories.
+	 * It will create a remote repository in your account.
+	 * It will create a local repository on your machine, in predefined path.
+	 * It will add a readme.md file in local repository.
+	 * It will map remote repository as origin, so push will cascade there.
+	 * It will commit this initial checkin to local repository.
+	 * It will push this initial checkin to remote repository.
+	 * Opens up the code in IDE (All repos are wired up now for your coding to begin)
 
-	Once the repo is created, it will open the directory in your favourite editor (PyCharm / Visual Studio Code) as configured.
+ * Clone a repository 
 
- * Clone a repo
+	`./git_repo.py clone https://github.com/prazjain/Test3.git`
 
-	`./git_repo.py clone`
+	 * This clones the repository to your machine, in predefined path.
+	 * Opens up the code in IDE
+	
+ * Fork a repository
 
-	I will implement this soon.
+	`./git_repo.py fork https://github.com/Tyrrrz/CliWrap.git`
+
+	 * It forks the 3rd party repository to your account.
+	 * It creates your personal remote repository.
+	 * It clones the remote respository to a predefined path.
+	 * Any further commit go to your local repository.
+	 * Any further push go to your personal remote repository.
+	 * Opens up the code in IDE (All repositories are wired up now for your coding to begin)
 	
  * More options coming...request them here
 
