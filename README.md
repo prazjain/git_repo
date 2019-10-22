@@ -34,6 +34,12 @@ How about if you can do this in seconds without having a crease on your brow?
 	 * It will push this initial checkin to remote repository.
 	 * Opens up the code in IDE (All repos are wired up now for your coding to begin)
 
+ * Use existing project and create/publish a repository
+
+	`./git_repo.py existing`
+
+	 * Same as create command except, it does not create local code directory (as reuses the one, that is present).
+	 
  * Clone a repository 
 
 	`./git_repo.py clone https://github.com/prazjain/Test3.git`
