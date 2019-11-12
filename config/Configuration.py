@@ -1,5 +1,6 @@
 """Configuration object that represents value from JSON config file"""
 import json
+from config.FilePathUtils import FilePathUtils
 
 
 class Configuration:
@@ -10,7 +11,8 @@ class Configuration:
         self._url = None
         self._username = ''
         self._pwd = ''
-        with open('configuration.json') as json_file:
+        self._filePathUtils = FilePathUtils()
+        with open(self._filePathUtils.configuration_file) as json_file:
             data = json.load(json_file)
             self._base_dir = data["local_base_dir"]
             self._ide_cmd = data["ide_cmd"]

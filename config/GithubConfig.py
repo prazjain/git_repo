@@ -1,10 +1,11 @@
 from config.Configuration import Configuration
 import json
-
+from config.FilePathUtils import FilePathUtils
 
 class GithubConfig(Configuration):
     def __init__(self):
-        with open('configuration.json') as json_file:
+        super().__init__()
+        with open(self._filePathUtils.configuration_file) as json_file:
             data = json.load(json_file)
             github_data = data['github']
             self._username = github_data['username']
