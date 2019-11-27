@@ -23,6 +23,8 @@ class GithubRepo(Repo):
         self._repo_name = self._get_unique_repo_name(unique_local)
         private = input("Is this private repo (yes/y) :").lower()
         self._private = True if private == "y" or private == "yes" else False
+        comment = input('Checkin comment :')
+        self._comment = 'Initial Comment' if not comment else comment
 
     def _create_local_repo(self, create_dir=True):
         lang = input('Primary language of the project (java/python) :').lower()
@@ -50,7 +52,7 @@ class GithubRepo(Repo):
         os.system("git init")
         os.system("touch README.md")
         os.system("git add .")
-        os.system("git commit -m 'Initial Commit'")
+        os.system(f"git commit -m '{self._comment}'")
         print("Created local repository")
 
     def _create_remote_repo(self):

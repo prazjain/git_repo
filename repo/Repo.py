@@ -7,6 +7,7 @@ class Repo:
     def __init__(self):
         self._repo_name = ""
         self._private = False
+        self._comment = ''
         self._filePathUtils = FilePathUtils()
 
     def user_prompt(self):
